@@ -1,0 +1,3 @@
+from bot.handler import Handler
+
+class DatabaseLogger(Handler): ...
