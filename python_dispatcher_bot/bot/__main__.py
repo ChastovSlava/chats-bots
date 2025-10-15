@@ -6,7 +6,7 @@ from bot.long_polling import start_long_pooling
 if __name__ == "__main__":
     try:
         dispatcher = Dispatcher()
-        #dispatcher.add_handler(DatabaseLogger())
+        dispatcher.add_handler(DatabaseLogger())
         dispatcher.add_handler(MessageEcho())
         start_long_pooling(dispatcher)
     except KeyboardInterrupt:
